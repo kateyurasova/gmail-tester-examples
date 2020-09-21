@@ -1,0 +1,17 @@
+{
+  "name": "gmail-tester-examples",
+  "version": "1.0.0",
+  "description": "Project is created for demonstration of how to use gmail-tester-extended package for testing of Gmail notification (sending, receiveing, replying, checking emails)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kate Yurasova",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.2.0"
+  },
+  "dependencies": {
+    "gmail-tester-extended": "^1.1.2"
+  }
+}
