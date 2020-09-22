@@ -1,6 +1,6 @@
-context('Check email in inbox', () => {
+context('Google API', () => {
 
-    it('Send email from one email to another', () => {
+    it('Follow the link contained in the appropriate email', () => {
         cy.log('WHEN User in your app sends an invitation email');
         // Implement sending email from your app via UI
 

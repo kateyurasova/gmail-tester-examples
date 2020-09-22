@@ -19,7 +19,7 @@ describe('Sending email via Google API', () => {
         cy.downloadFile(PICTURE_URL, FULL_PATH, FILE_NAME);
     });
 
-    it('Send email from one email to another',  () => {
+    it('Send email from one email attachment to another gmail user',  () => {
         cy.log('WHEN User gmail user sends email with attachment to another gmail user');
         cy.log(`Email from ${USER_SEND_EMAIL} to ${USER_RECEIVE_EMAIL}`);
         cy.log(`Email subject is ${EMAIL_SUBJECT}`);

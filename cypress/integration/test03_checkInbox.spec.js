@@ -1,6 +1,6 @@
 describe('Check email in inbox', function () {
 
-    it('Check Google email with combo from+to+subject', function () {
+    it('Check Google email with combo from+to+subject', () => {
         cy.log('WHEN User sends an email from your app');
         // Implement sending email in you app via UI
 
@@ -11,7 +11,7 @@ describe('Check email in inbox', function () {
             "AUTO EMAIL SUBJECT 108920534422");
     });
 
-    it('Check Google email with combo from+to+subject+message(snippet)', function () {
+    it('Check Google email with combo from+to+subject+message(snippet)',  () => {
         cy.log('WHEN User sends an email from your app');
         // Implement sending email in you app via UI
 
@@ -23,7 +23,7 @@ describe('Check email in inbox', function () {
             "AUTO EMAIL MESSAGE 992764133");
     });
 
-    it('Check Google email with combo from+to+subject+message(text in body)', function () {
+    it('Check Google email with combo from+to+subject+message(text in body)', () =>  {
         cy.log('WHEN User sends an email from your app');
         // Implement sending email in you app via UI
 

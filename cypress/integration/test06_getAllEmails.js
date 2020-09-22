@@ -1,11 +1,11 @@
-describe('Check email in inbox', function () {
+describe('Google API', function () {
 
-    it('Send email from one email to another', function () {
+    it('All all email from inbox', () => {
         cy.log('Simply get all messages');
         cy.getAllEmails('drivecentricautomation@gmail.com');
     });
 
-    it('Send email from one email to another', function () {
+    it('Get all emails during specific period filtered by subject and sender',  () => {
         cy.log('Simply get all messages');
         cy.getEmailsInTimeRange("drivecentricautomation@gmail.com",
             "dcemailtestsix@gmail.com",
