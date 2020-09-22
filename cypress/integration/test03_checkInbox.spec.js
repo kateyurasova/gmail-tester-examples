@@ -1,8 +1,10 @@
-import * as users from '../fixtures/users.json';
-
 describe('Check email in inbox', function () {
 
     it('Check Google email with combo from+to+subject', function () {
+        cy.log('WHEN User sends an email from your app');
+        // Implement sending email in you app via UI
+
+        cy.log('THEN Email sent from you app is received');
         cy.checkGoogleEmail(
             'dcemailtestsix@gmail.com',
             'drivecentricautomation@gmail.com',
@@ -10,6 +12,10 @@ describe('Check email in inbox', function () {
     });
 
     it('Check Google email with combo from+to+subject+message(snippet)', function () {
+        cy.log('WHEN User sends an email from your app');
+        // Implement sending email in you app via UI
+
+        cy.log('THEN Email sent from you app is received');
         cy.checkGoogleEmailWithMessage(
             'dcemailtestsix@gmail.com',
             'drivecentricautomation@gmail.com',
@@ -18,6 +24,10 @@ describe('Check email in inbox', function () {
     });
 
     it('Check Google email with combo from+to+subject+message(text in body)', function () {
+        cy.log('WHEN User sends an email from your app');
+        // Implement sending email in you app via UI
+
+        cy.log('THEN Email sent from you app is received');
         cy.getMessagesWithBody(
             'katsiaryna.yurasova@itechart-group.com',
             'drivecentricautomation@gmail.com',

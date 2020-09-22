@@ -14,6 +14,9 @@ describe('Sending email via Google API', function () {
         cy.log(`Email subject is ${EMAIL_SUBJECT}`);
         cy.log(`Email message is ${EMAIL_MESSAGE}`);
         cy.sendGoogleEmail(USER_SEND_EMAIL, USER_RECEIVE_EMAIL, EMAIL_SUBJECT, EMAIL_MESSAGE);
+
+        cy.log('THEN Email is presented is your application/CRM');
+        // Implement check for your specific app (UI implementation)
     });
 
 });

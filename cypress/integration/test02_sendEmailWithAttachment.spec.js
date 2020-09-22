@@ -20,7 +20,7 @@ describe('Sending email via Google API', () => {
     });
 
     it('Send email from one email to another',  () => {
-        cy.log('WHEN User gmail user sends email to another gmail user');
+        cy.log('WHEN User gmail user sends email with attachment to another gmail user');
         cy.log(`Email from ${USER_SEND_EMAIL} to ${USER_RECEIVE_EMAIL}`);
         cy.log(`Email subject is ${EMAIL_SUBJECT}`);
         cy.log(`Email message is ${EMAIL_MESSAGE}`);
@@ -41,6 +41,9 @@ describe('Sending email via Google API', () => {
                 attachments
             );
         })
+
+        cy.log('THEN Email is presented is your application/CRM');
+        // Implement check for your specific app (UI implementation)
     });
 
 });

@@ -48,7 +48,7 @@ module.exports = (on, config) => {
         }
     });
     on("task", {
-        "gmail:getAllEmails": async args => {
+        "gmail:get-all-emails": async args => {
             const {email} = args;
             const allEmails = await gmail.get_messages(
                 await getCredentials(email),

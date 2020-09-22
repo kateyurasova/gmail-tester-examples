@@ -69,12 +69,28 @@ Cypress.Commands.add("checkGoogleEmail", (from, to, subject) => {
 })
 
 Cypress.Commands.add("getAllEmails", (email) => {
-    cy.task("gmail:getAllEmails", {
+    cy.task("gmail:get-all-emails", {
         email: email
     }).then(response => {
         console.log('All emails');
         console.log(response);
         return response;
+    });
+})
+
+Cypress.Commands.add("getEmailsInTimeRange", (to, from, subject, before, after) => {
+    cy.task("gmail:get-messages", {
+        to: to,
+        options: {
+            from: from,
+            subject: subject,
+            include_body: true,
+            before: before,
+            after: after
+        }
+    }).then(emails => {
+        console.log(emails);
+        return emails;
     });
 })
 
