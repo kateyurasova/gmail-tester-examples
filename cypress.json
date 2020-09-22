@@ -1,1 +1,8 @@
-{}
+{
+  "env": {
+    "downloadFolder": "my-downloads"
+  },
+  "requestTimeout": 240000,
+  "responseTimeout": 120000,
+  "taskTimeout": 600000
+}
