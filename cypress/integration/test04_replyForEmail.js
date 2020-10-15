@@ -5,8 +5,8 @@ describe('Reply for email', () => {
         // Implement sending email in you app via UI
         cy.log('AND Customer replies to email previously sent');
         cy.replyForGoogleEmail(
-            'dcemailtestsix@gmail.com',
-            'drivecentricautomation@gmail.com',
+            "cypressgmaitester1@gmail.com",
+            "cypressexampletester1@gmail.com",
             "New message about smth12345",
             "REPLY Message 12345");
 

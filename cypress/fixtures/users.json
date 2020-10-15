@@ -1,8 +1,10 @@
 {
   "userSendEmail": {
-    "email": "dcemailtestsix@gmail.com"
+    "email": "cypressgmaitester1@gmail.com",
+    "password": "OctoberTenFifteen2020!"
   },
   "userReceiveEmail": {
-    "email": "drivecentricautomation@gmail.com"
+    "email": "cypressexampletester1@gmail.com",
+    "password": "OctoberTenFifteen2020!"
   }
 }

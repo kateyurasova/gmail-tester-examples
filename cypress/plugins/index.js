@@ -16,7 +16,7 @@ const gmail = require("gmail-tester-extended");
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin');
 
 const POLL_INTERVAL = 5;
-const MAX_POLL_INTERVAL = 60;
+const MAX_POLL_INTERVAL = 20;
 
 function getCredentials(email) {
     return path.resolve(__dirname, `credentials-${getLogin(email)}.json`);

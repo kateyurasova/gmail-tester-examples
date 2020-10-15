@@ -7,7 +7,7 @@ context('Google API', () => {
         cy.log('THEN Email is received by customer in Gmail');
         cy.getEmailBody(
             'katsiaryna.yurasova@itechart-group.com',
-            'drivecentricautomation@gmail.com',
+            'cypressexampletester1@gmail.com',
             "Automating Repetitive Tasks with Excel Macros").then((emails) => {
             cy.writeFile('cypress/fixtures/email-html.json', emails[0].body.html);
 
